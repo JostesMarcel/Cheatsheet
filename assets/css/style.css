@@ -16,8 +16,7 @@ h1 {
     font-family: Magma, sans-serif;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-color: green;
-    background-image: linear-gradient(to right,#2a653c 30%,#51bb3a 70%);
+    background-image: linear-gradient(to right,MediumOrchid 30%,Salmon 70%);
     background-size: cover;
     text-align: center;
     font-size: 6em;
@@ -29,7 +28,7 @@ a {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-color: #ba254c;
-    background-image: linear-gradient(to right,#ba254c 30%,#392ea4 70%);
+    background-image: linear-gradient(to right,MediumOrchid 30%,Salmon 70%);
     background-size: cover;
     display: block;
     padding: 2% 0;
