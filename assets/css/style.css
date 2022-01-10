@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: url(../img/hintergrund.jpg) no-repeat center/cover;
+    width: 100%;
+    height: 100%;
+}
+@font-face {
+    font-family: Magma;
+    src: url(../fonts/MagmaWave\ Caps.otf);
+}
+h1 {
+    font-family: Magma, sans-serif;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: green;
+    background-image: linear-gradient(to right,#2a653c 30%,#51bb3a 70%);
+    background-size: cover;
+    text-align: center;
+    font-size: 6em;
+    padding-top: 5%;
+}
+
+a {
+    text-decoration: none;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: #ba254c;
+    background-image: linear-gradient(to right,#ba254c 30%,#392ea4 70%);
+    background-size: cover;
+    display: block;
+    padding: 2% 0;
+    text-align: center;
+    font-size: 3em;
+    margin: 7% 30%;
+    border: 2px solid violet;
+    border-radius: 20px 20px;
+}
+
+a:hover {
+    border: 2px solid red;
+    font-size: 3.3em;
+}
+
+a:nth-child(2) {
+    text-decoration: none;
+}

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/cmd.css">
+    <style>
+        @font-face {
+            font-family: Squid;
+            src: url(../fonts/Game\ Of\ Squids.ttf);
+        }
+        @font-face {
+            font-family: cool;
+            src: url(../fonts/coolvetica\ condensed\ rg.otf);
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            background: url(../img/hintergrund2.jpg) no-repeat center/cover;
+        }
+        h1 {
+            font-family: Squid, sans-serif;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-color: green;
+            background-image: linear-gradient(to right,darkblue 30%,gray 70%);
+            background-size: cover;
+            text-align: center;
+            font-size: 6em;
+            padding-top: 5%;
+        }
+        table {
+            margin: 5% auto;
+            text-align: center;
+            font-family: cool;
+            font-size: 3em;
+            color: black;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table th {
+            padding-top: 2%;
+            padding-bottom: 2%;
+            background-color: green;
+            color: white;
+        }
+
+        table tr th, td {
+            border: 4px solid transparent;
+            text-align: left;
+        }
+        table tr:nth-child(even){
+            background-color: #f2f2f2;
+            opacity: 0.7;
+        }
+        table tr:nth-child(odd){
+            background-color: #ddd;
+            opacity: 0.9;
+        }
+        a {
+            display: block;
+            text-align: center;
+            padding-bottom: 2%;
+            font-size: 2em;
+            text-decoration: none;
+            color: white;
+            margin: 0 40%;
+        }
+        a:hover {
+            font-size: 3em;
+            text-decoration: underline;
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Terminal funktionen</h1>
+    <table>
+        <tr>
+            <th>Befehl</th>
+            <th>Beschreibung</th>
+            <th>Beispiel</th>
+        </tr>
+        <tr>
+            <td>cd</td>
+            <td>Change Directory - wechselt in einen Unterordner</td>
+            <td>cd Verzeichnis
+                Beispiel: cd /Users /Documents /...
+                
+                Verzeichnisse (in Terminal "directory" genannt) werden mit einem "/" getrennt.</td>
+        </tr>
+        <tr>
+            <td>pwd</td>
+            <td>Print Working Directory - zeigt das aktuelle Verzeichnis an	</td>
+            <td>pwd Verzeichnis</td>
+        </tr>
+        <tr>
+            <td>ls</td>
+            <td>List - zeigt den Inhalt eines Ordners an</td>
+            <td>ls Verzeichnis Beispiel: ls -a zeigt auch unsichtbare Dateien an</td>
+        </tr>
+        <tr>
+            <td>cp</td>
+            <td>Copy - kopiert Datei</td>
+            <td>cp Pfad/Quellordner Pfad/Zielordner
+                Beispiel: cp ~/Documents/Artikel.txt ~/Desktop/
+                
+                Achten Sie darauf den Pfad zum Quellordner (im Beispiel "~/Documents/") und den Pfad zum Ziel-Ordner (im Beispiel "~/Desktop/") anzugeben. Das Gleiche gilt auch für den Move-Befehl.</td>
+        </tr>
+        <tr>
+            <td>mv</td>
+            <td>Move - verschiebt eine Datei</td>
+            <td>mv Pfad/Quellordner Pfad/Zielordner
+                Beispiel: mv ~/Documents/Artikel.txt ~/Desktop/</td>
+        </tr>
+        <tr>
+            <td>rm</td>
+            <td>Remove - löscht Dateien. Unterscheidung zwischen Ordnern und Dateien.</td>
+            <td>Datei: rm Pfad/Datei
+                Beispiel: rm ~/Documents/Artikel.text
+                
+                Ordner: rmdir -R ~/Documents/Löschen
+                Beispiel: rmdir -R ~/Documents/Löschen</td>
+        </tr>
+        <tr>
+            <td>mkdir</td>
+            <td>Make Directory - erzeugt einen neuen Ordner</td>
+            <td>mkdir "Ordnerbezeichnung"
+                Beispiel: mkdir "NeuerOrdner"</td>
+        </tr>
+        <tr>
+            <td>kill</td>
+            <td>Beendert den angegebenen Prozesse</td>
+            <td>kill Prozessname
+                Beispiel: kill cp ~/Documents/Artikel.txt ~/Desktop/</td>
+        </tr>
+        <tr>
+            <td>su</td>
+            <td>Switch User - wechselt zum angegebenen Benutzer</td>
+            <td>su Benutzername
+                Beispiel: su Admin</td>
+        </tr>
+        <tr>
+            <td>Wildcards</td>
+            <td>einzelne Terminal-Befehle auf mehrere Dateien anwenden</td>
+            <td>Beliebige Zeichenkette: *
+                Beispiel: mv *.png ./PNGs (verschiebt alle Dateien mit der Endung .png in den Ordner PNGs)
+                
+                Einzelnes beliebiges Zeichen: ?
+                Beispiel: mv ?.png ./PNGs (nur Dateinamen mit exakt einem Zeichen als Dateiname werden in den Ordner PNGs verschoben)</td>
+        </tr>
+        <tr>
+            <td>whoami</td>
+            <td>Anzeige des aktuellen Benutzers</td>
+            <td>whoami</td>
+        </tr>
+        <tr>
+            <td>date</td>
+            <td>Anzeige des aktuellen Datums</td>
+            <td>date</td>
+        </tr>
+        <tr>
+            <td>screencapture</td>
+            <td>Erzeugt Screenshot	</td>
+            <td>screencapture</td>
+        </tr>
+        <tr>
+            <td>find</td>
+            <td>Suchfunktion für Dateien</td>
+            <td>find /Verzeichnis/Dateiname
+                Beispiel: find/home/bild1.jpeg</td>
+        </tr>
+        <tr>
+            <td>whatis</td>
+            <td>Kurzinfo zum angegebenen Befehl</td>
+            <td>whatis</td>
+        </tr>
+    </table>
+
+    <footer>
+        <a href="../../index.html">Back Home</a>
+        <a href="https://www.heise.de/tipps-tricks/Mac-Terminal-Befehle-fuer-einfacheres-Arbeiten-4337492.html">Link</a>
+    </footer>
+</body>
+
+</html>
