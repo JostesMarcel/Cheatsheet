@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Magma;
+    src: url(../fonts/MagmaWave\ Caps.otf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,10 +11,7 @@
 html {
     background: url(../img/hintergrund.jpg) no-repeat center/cover;
 }
-@font-face {
-    font-family: Magma;
-    src: url(../fonts/MagmaWave\ Caps.otf);
-}
+
 h1 {
     font-family: Magma, sans-serif;
     -webkit-background-clip: text;
